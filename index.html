@@ -33,6 +33,15 @@
 				'https://connect.facebook.net/en_US/fbevents.js');
 			fbq('init', '272704616849622');
 			fbq('track', 'PageView');
+
+			function callFlutterGetManufacture() {
+			      // Memanggil fungsi Flutter menggunakan FlutterChannel
+			      if (window.FlutterChannel) {
+			        window.FlutterChannel.postMessage('getManufacture');
+			      } else {
+			        console.log('FlutterChannel not available');
+			      }
+			    }
 		</script>
 		<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=272704616849622&ev=PageView&noscript=1"
@@ -404,4 +413,5 @@
 		<script src="plugins.js"></script>
 
 	</body>
+  <button onclick="callFlutterGetManufacture()">C</button>
 </html>
