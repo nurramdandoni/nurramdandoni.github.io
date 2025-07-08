@@ -1,422 +1,327 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-		<title>Mr. Doni Nurramdan</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Doni Nurramdan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden {
+      display: none;
+    }
 
-		<!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+    .lang-toggle {
+      cursor: pointer;
+    }
+  </style>
+</head>
 
-		<!-- Fichiers CSS -->
-		<link rel="stylesheet" href="reset.css">
-		<!--[if lt IE 9]> 
-		<link rel="stylesheet" href="css/cv.css" media="screen">
-		<![endif]-->
-		<link rel="stylesheet" media="screen and (max-width:480px)" href="mobile.css">
-		<link rel="stylesheet" media="screen and (min-width:481px)" href="cv.css">
-		<link rel="stylesheet" media="print" href="print.css">
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="max-w-6xl mx-auto bg-white shadow-lg mt-10 rounded-md overflow-hidden">
+    <!-- Language toggle -->
+    <div class="flex justify-end p-4 space-x-4 bg-gray-200">
+      <span id="lang-en-btn" class="lang-toggle font-bold">🇬🇧 English</span>
+      <span id="lang-id-btn" class="lang-toggle">🇮🇩 Indonesia</span>
+    </div>
+    <div class="md:flex">
+      <!-- Sidebar kanan -->
+      <aside class="bg-blue-900 text-white p-6 md:w-1/3 flex flex-col">
+        <div class="flex justify-center">
+          <img src="mrdon.jpg" alt="Doni Nurramdan"
+            class="w-32 h-32 rounded-full border-2 border-white mb-4 items-center">
+        </div>
+        <h2 class="text-xl font-bold text-center">Doni Nurramdan</h2>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li>📍 Jakarta Selatan, Indonesia</li>
+          <li>📧 <a href="mailto:nurramdandoni@gmail.com?subject=Hello Doni&body=Hai Doni, saya ingin ngobrol lebih lanjut.">nurramdandoni@gmail.com</a></li>
+          <li>📱 <a href="https://wa.me/62895330802566" target="_blank">+62 895‑3308‑02566</a></li>
+          <li>💼 <a href="https://linkedin.com/in/doni-nurramdan-4598491" target="_blank">linkedin.com/in/doni-nurramdan-4598491</a></li>
+          <li>📘 <a href="https://www.facebook.com/doni.nurramdan" target="_blank">facebook.com/doni.nurramdan</a></li>
+          <li>📸 <a href="https://www.instagram.com/doninurramdan" target="_blank">@doninurramdan</a></li>
+          <li>🌐 <a href="https://github.com/nurramdandoni" target="_blank">github.com/nurramdandoni</a></li>
+          <li>🌐 <a href="https://paylite.co.id" target="_blank">paylite.co.id</a></li>
+        </ul>
+        <hr class="my-4 border-white opacity-30 w-full" />
+        <h3 class="font-semibold text-lg">Skills</h3>
+        <ul class="list-disc ml-5 mt-2 text-sm space-y-1">
+          <li>PHP (Native, CodeIgniter, Laravel)</li>
+          <li>Node.js, Spring Boot (Java/Kotlin)</li>
+          <li>Python (Flask, Django), Go</li>
+          <li>VueJS, React, NuxtJS</li>
+          <li>C/C++, Arduino, MQL4</li>
+          <li>jQuery, Cordova, Flutter</li>
+          <li>MySQL, PostgreSQL, Redis, OracleDB</li>
+          <li>Docker, Jenkins, Openshift, Portainer</li>
+          <li>REST API, GraphQL, OAuth2, SSO</li>
+          <li>Kafka, MQTT, SSE, GCM</li>
+          <li>CI/CD, Git, Agile/Scrum</li>
+          <li>Design: CorelDraw, Photoshop</li>
+        </ul>
+        <hr class="my-4 border-white opacity-30 w-full" />
+        <h3 class="font-semibold text-lg">Languages</h3>
+        <p><img src="https://flagcdn.com/w20/id.png" class="inline w-4 h-3" /> Indonesian (Native)</p>
+        <p><img src="https://flagcdn.com/w20/gb.png" class="inline w-4 h-3" /> English (Intermediate)</p>
+        <hr class="my-4 border-white opacity-30 w-full" />
+        <h3 class="font-semibold text-lg">Hobbies</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Eksperimen & Elektronika</li>
+          <li>IoT & Drone</li>
+          <li>Desain Logo & Riset</li>
+        </ul>
+      </aside>
 
-		<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-				'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '272704616849622');
-			fbq('track', 'PageView');
+      <!-- Konten utama -->
+      <main class="p-6 md:w-2/3 space-y-8">
+        <!-- English Section -->
+        <section id="en-section">
+          <h2 class="text-2xl font-bold border-b pb-2">Profile</h2>
+          <p class="text-sm mt-2">Experienced Fullstack Developer with over 8 years of experience in developing and
+            maintaining scalable applications for government, fintech, and education sectors. Skilled in PHP, Node.js,
+            Java (Spring Boot), Python (Flask, Django), and modern frontend frameworks like VueJS and React. Strong
+            DevOps background with Docker and Openshift. Proven track record of delivering robust solutions under tight
+            deadlines. Passionate about clean, maintainable code and pragmatic software architecture.</p>
 
-			function callFlutterGetManufacture() {
-			      // Memanggil fungsi Flutter menggunakan FlutterChannel
-			      if (window.FlutterChannel) {
-			        window.FlutterChannel.postMessage('getManufacture');
-			      } else {
-			        console.log('FlutterChannel not available');
-			      }
-			    }
-			function getDataLocalStorage(){
-				alert("Dipanggil dari flutter");
-			}
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=272704616849622&ev=PageView&noscript=1"
-			/></noscript>
-			<!-- End Facebook Pixel Code -->
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Education</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li>SDN 5 Gardujaya (1998 - 2004)</li>
+            <li>SMPN 3 Panawangan (2004 - 2007)</li>
+            <li>SMAN 1 Panawangan (2007 - 2010)</li>
+            <li>D3 Computer Engineering, STT Telematika Cakrawala (2013 - 2016)</li>
+            <li>Bachelor in Computer Science, STT Bandung (2019 – ongoing)</li>
+            <li>Bachelor in Computer Science, Universitas Terbuka (2024 – ongoing)</li>
+          </ul>
 
-	</head>
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Employment</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li>
+              <strong>Fullstack Engineer</strong> — PT Kita Indonesia Plus (We+), Jakarta Pusat (May 2025 - Aug 2025)
+              <br>• Developed Dasboard Health, Asset, CMS, API Product Using Django, React
+            </li>
+            <li>
+              <strong>Fullstack Engineer</strong> — Dana Pensiun Bank Indonesia (Oct 2024 - Apr 2025)
+              <br>• Developed logistics system using PHP, Node.js, Spring Boot
+              <br>• Integrated thermal printer, SSO, rebalance cronjob
+            </li>
+            <li>
+              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (Nov 2022 - Nov 2024)
+              <br>• Android/iOS attendance system (Cordova, NodeJS, VueJS)
+              <br>• SSE notifications, GPS spoof detection, SSL
+            </li>
+            <li>
+              <strong>Fullstack Developer</strong> — Futuready (May 2022 - Nov 2022)
+              <br>• Spring Boot APIs & VueJS integration
+              <br>• CI/CD with Docker
+            </li>
+            <li>
+              <strong>PHP Developer</strong> — Indocyber Global Teknologi (May 2022 - Apr 2025)
+              <br>• Delivered PHP-based systems
+            </li>
+            <li>
+              <strong>Fullstack Developer</strong> — STT Bandung (May 2018 - Apr 2022)
+              <br>• Built SIAKAD, Elearning, OASIS
+              <br>• Integrated Jitsi, SSE, MQTT
+            </li>
+            <li>
+              <strong>Back End Programmer</strong> – PT Gravitasi Teknologi Indonesia (2019–2020)
+              <br>• Integrated FlightAware API Plane Tracking
+              <br>• Maintain Product API
+            </li>
+            <li>
+              <strong>Pjs. Kepala PPSI</strong> – STT Bandung (Mei 2020– Mar 2021)
+              <br>• Manage Planning Project and Timeline
+              <br>• Deliver Report to Management
+            </li>
+            <li>
+              <strong>Software Engineering Teacher</strong> – SMK Taruna Bhakti Kadugede (2012–2018)
+              <br>• Designed semester (Pomes) and annual (Prota) learning curricula  
+              <br>• Created face-to-face teaching documentation  
+              <br>• Conducted learning outcome evaluations  
+              <br>• Delivered student performance assessments
+            </li>
+            <li>
+              <strong>Sales</strong> – PT Amerta Indah Otsuka (2016–2017)
+              <br>• Distributed products: Pocari Sweat, Soyjoy, and Ion Essence  
+              <br>• Conducted product promotions  
+              <br>• Delivered product presentations  
+              <br>• Reported sales performance
+            </li>
+          </ul>
 
-	<body>
-		<script>
-			fbq('track', 'ViewContent');
-		</script>
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Freelance & Projects</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li>Periodic Table App for SMA/SMK</li>
+            <li>Mini Market System – Toko Cicih</li>
+            <li>Medical Record System – Clinic dr. Yossi Garniwa</li>
+            <li>SMK Taruna Bhakti CAT Exam App v1–v3</li>
+            <li>E‑Letter System – Desa Gardujaya</li>
+            <li>Logo Design – CV. Karya Insani & Produk Basreng</li>
+          </ul>
 
-		<!-- Header -->
-		<header role="banner">
-			<div class="container_16">
-				<hgroup>
-					<h1>Doni Nurramdan, A. Md.</h1>
-					<h2>IT Programmer - Like Sains . Robotic</h2>
-					<br><b><i>“ With program,
-					have solution acurate, fast and fair “</i></b>
-				</hgroup>
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Certification</h2>
+          <p class="text-sm mt-2"><strong>Certified Internet of Things Associate</strong> – Multimatics (Mar 2021)</p>
 
-				<figure>
-					<img src="mrdon.jpg" alt="nurramdandoni">
-				</figure>
-			</div>
-		</header>
-		
-		<!-- Contact -->
-		<section class="contactform clearfix">
-			<div class="container_16">
-				<h3>Contactez-moi</h3>
-				<p>Remplissez le formulaire ci-dessous afin de m'envoyer un message. Je vous répondrais dans les plus bref délai. 
-					<br><em>Tous les champs sont requis.</em></p>
-					<form novalidate="novalidate" method="post" action="#" name="contact" class="grid_16">
-						<p class="grid_10"><textarea name="message" placeholder="Votre message" class="required"></textarea></p>
-						<p class="grid_6">
-							<input name="nom" placeholder="Nom - Prénom" class="required" type="text">
-							<input name="email" placeholder="Adresse email" class="required" type="email">	
-							<input name="envoi" value="Envoyer le message" class="required" type="submit">
-							<span class="messageform"></span>
-						</p>
-					</form>
-				</div>
-			</section>
-			
-			<!-- Corps -->
-			<section role="main" class="container_16 clearfix">
-				<div class="grid_16">
-					<!-- A propos -->
-					<div class="grid_8 apropos">
-						<h3>Tentang</h3>
-						<p>Programming membuat hidup lebih menyenangkan.</p>
-						<p style="text-align: justify;">Mengenal Programming pada tahun 2010, berhasil membuat program Tabel Periodik Kimia V1.0 untuk SMA/K/MA dengan Visual Basic 6.0, berlanjut dengan Sistem Pendaftaran UPTD Puskesmas Gardujaya tahun 2012 dengan PHP&MySQL, Sistem Klinik Dokter Yossi Garniwa v1.0 dan Sistem Pembelajaran Paket C PKBM Assyifa- kuningan tahun 2013 v2.0, Robot Trading Forex "EA Intraday 5p" dengan MQL4 pada tahun 2016, dan masih banyak di 2017 dengan dimulainya Prototipe 3D Printer versi Delta 1.0 dengan Firmware Marlin.
-						</p>
-						<p> Senang bisa bercerita lepas dengan anda!</p>
-					</div>
-					
-					<!-- Compétences atau Keahlian -->
-					<div class="grid_8 competences">
-						<h3>Keterampilan</h3>
-						<ul class="barres">
-							<li data-skills="97">
-								Microsoft Office
-								<span style="width: 97%;"></span>
-							</li>
-							<li data-skills="90">
-								Visual Basic 6.0 + Visual Basic .NET
-								<span style="width: 90%;"></span>
-							</li>
-							<li data-skills="75">
-								Corel Draw
-								<span style="width: 75%;"></span>
-							</li>
-							<li data-skills="60">
-								Adobe PhotoShop
-								<span style="width: 60%;"></span>
-							</li>
-							<li data-skills="95">
-								Pemrograman C/ Mikrokontroler/Arduino/ Robotika
-								<span style="width: 95%;"></span>
-							</li>
-							<li data-skills="80">
-								Pemrograman C++
-								<span style="width: 80%;"></span>
-							</li>
-							<li data-skills="95">
-								HTML + CSS + Hosting + VueJs + NuxtJs
-								<span style="width: 95%;"></span>
-							</li>
-							<li data-skills="96">
-								Pemrograman PHP Native + OOP
-								<span style="width: 96%;"></span>
-							</li>
-							<li data-skills="95">
-								PHP FrameWork CodeIgniter
-								<span style="width: 95%;"></span>
-							</li>
-							<li data-skills="50">
-								PHP FrameWork Laravel 5.8
-								<span style="width: 50%;"></span>
-							</li>
-							<li data-skills="70">
-								Framework Javascript (JQuery), Javascript Native, AJAX
-								<span style="width: 85%;"></span>
-							</li>
-							<li data-skills="60">
-								Version Control System ( GIT )
-								<span style="width: 60%;"></span>
-							</li>
-							<li data-skills="97">
-								Database MySQL
-								<span style="width: 97%;"></span>
-							</li>
-							<li data-skills="80">
-								Pemrograman MQL4 + Trading Online
-								<span style="width: 80%;"></span>
-							</li>
-							<li data-skills="70">
-								Sales + Marketing
-								<span style="width: 70%;"></span>
-							</li>
-							<li data-skills="50">
-								Python
-								<span style="width: 50%;"></span>
-							</li>
-							<li data-skills="70">
-								Network
-								<span style="width: 70%;"></span>
-							</li>
-<li data-skills="70">
-								Internet of Things (IoT), Cerficated Associated
-								<span style="width: 86%;"></span>
-							</li>
-							<li data-skills="70">
-								REST API MultiLanguage (PHP, NodeJs, Python, Go, Spring Boot(Kotlin))
-								<span style="width: 75%;"></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-																					
-				<!-- Expériences -->
-				<div class="grid_16 experiences">
-					<h3>Pengalaman</h3>
-					<ul>
-						<li>
-							<h4>
-								<strong>ANALIS KIMIA</strong>
-							</h4>
-							<span class="dates">2010</span>
-							<p>Departement Teknisi dan Larutan PT. Wijaya Maju Elektroindo, Jakarta Barat</p>
-						</li>
-						<li>
-							<h4>
-								<strong>PESERTA</strong>
-							</h4>
-							
-							<span class="dates">2011</span>
-							
-							<p>Program Pemuda Mandiri Jawa Barat Angkatan ke- III, Bandung</p>
-							
-							<p>Balai Inseminasi Buatan Provinsi Jawa Barat Pelatihan Inseminator Angkatan ke- VI, Lembang Bandung</p>
-						</li>
-						<li>
-							<h4>
-								<strong>STAFF ADMINISTRASI </strong>
-							</h4>
-							<span class="dates">2011 - 2014</span>
-							<p>UPTD Kesehatan Puskesmas Gardujaya Administrasi Pasien Rawat Jalan Puskesmas Gardujaya</p>
-						</li>
-						<li>
-							<h4>
-								<strong>STAFF PENGAJAR </strong>
-							</h4>
-							<span class="dates">2012 - 2015</span>
-							<p>SMK Taruna Bhakti Kadugede - Kuningan Kepala Program Studi Rekayasa Perangkat Lunak ( RPL ) Guru Produktif RPL</p>
-						</li>
-						<li>
-							<h4>
-								<strong>ASSISTAN</strong>
-							</h4>
-							<span class="dates">2013 - 2015</span>
-							<p>STT TELEMATIKA CAKRAWALA Assistance Dosen, Ibu Nenen Isnaeni, S.Kom. Mata Kuliah OS, Pemrograman VB, PHP, MySQL.</p>
-						</li>
-						<li>
-							<h4>
-								<strong>PROGRAMMER WEB</strong>
-							</h4>
-							<span class="dates">2016</span>
-							<p>PT. EXPRESS GROUP, Tangerang Staff IT Sistem Informasi Pool Taxi</p>
-						</li>
-						<li>
-							<h4><strong>SALES DISTRIBUTION </strong></h4>
-							<span class="dates">2016 - 2017</span>
-							<p>PT. AMERTA INDAH OTSUKA ( West Branch ), Tangerang Salesman Pocari Sweat, Soyjoy dan Ion Essence</p>
-						</li>
-						<li>
-							<h4>
-								<strong>STAFF PENGAJAR </strong>
-							</h4>
-							<span class="dates">2017 - 2018</span>
-							<p>SMK Taruna Bhakti Kadugede - Kuningan Guru Produktif RPL</p>
-						</li>
-						<li>
-							<h4>
-								<strong>STAFF PPSI </strong>
-							</h4>
-							<span class="dates">2018 - 2020</span>
-							<p>Sekolah Tinggi Teknologi Bandung - Staff PPSI ( Pusat Pengembangan Sistem Informasi ), FullStack Developer</p>
-						</li>
-<li>
-							<h4>
-								<strong>Pjs. Ka. PPSI </strong>
-							</h4>
-							<span class="dates">Mei 2020 - Maret 2021</span>
-							<p>Sekolah Tinggi Teknologi Bandung - Pjs. Ka. PPSI ( Pusat Pengembangan Sistem Informasi ), FullStack Developer</p>
-						</li>
-						<li>
-							<h4>
-								<strong>BACK END PROGRAMMER </strong>
-							</h4>
-							<span class="dates">2019 - 2020</span>
-							<p>PT. Gravitasi Teknologi Indonesia - Staff Remote, Back End Programmer</p>
-						</li>
-<li>
-							<h4>
-								<strong>BACK END PROGRAMMER </strong>
-							</h4>
-							<span class="dates">2021 - April 2022</span>
-							<p>Sekolah Tinggi Teknologi Bandung, Staff Back End Programmer, GESIT ( Pengembangan Sistem dan Teknologi )</p>
-						</li>
-						<li>
-							<h4>
-								<strong>PHP DEVELOPER </strong>
-							</h4>
-							<span class="dates">Mei 2022 - Sekarang</span>
-							<p>PT. Indocyber Global Teknologi, PHP Developer</p>
-						</li>
-						<li>
-							<h4>
-								<strong>FULL STACK DEVELOPER </strong>
-							</h4>
-							<span class="dates">Mei 2022 - Oktober 2022</span>
-							<p>PT. Futuready - Branch Indonesia, Full Stack Developer</p>
-						</li>
-						<li>
-							<h4>
-								<strong>FULL STACK DEVELOPER </strong>
-							</h4>
-							<span class="dates">November 2022 - Oktober 2024</span>
-							<p>PT. BPJS Ketenagakerjaan - Cabang Grh BPJAMSOSTEK, Full Stack Developer</p>
-						</li>
-<li>
-							<h4>
-								<strong>CERTIFICATION </strong>
-							</h4>
-							<span class="dates">08 - 10 Maret 2021</span>
-							<p>Certification ToT By. MULTIMATICS - CIoTA, Certification Internet of Things Associatted</p>
-						</li>
-						<li>
-							<h4>
-								<strong>PROGRAMMER APLIKASI & DESIGNER ( FREELANCER ) </strong>
-							</h4>
-							<span class="dates">2012 - Sekarang</span>
-							<p>- Aplikasi Tabel Periodik SMP, SMA/ SMK, SMPN3 Panawangan</p>
-							<p>- Aplikasi Mini Market Toko Cicih, Gardujaya</p>
-							<p>- Aplikasi Rekam Medik v1.0, Puskesmas Gardujaya</p>
-							<p>- Aplikasi Rekam Medik Klinik Dokter dr. Yossi Garniwa, Rancah</p>
-							<p>- Aplikasi Rekam Medik v1.3, Puskesmas Gardujaya</p>
-							<p>- Aplikasi e-Surat, Desa Gardujaya</p>
-							<p>- Logo CV. Karya Insani & Produk Basreng, Cingambul Majalengka</p>
-							<p>- Aplikasi CAT Ujian SMK Taruna Bhakti Kadugede v1, Kuningan Jawa Barat</p>
-							<p>- Aplikasi CAT Ujian SMK Taruna Bhakti Kadugede v2, Kuningan Jawa Barat</p>
-							<p>- Aplikasi CAT Ujian SMK Taruna Bhakti Kadugede v3, Kuningan Jawa Barat</p>
-						</li>
-																							
-					</ul>
-				</div>
-																					
-				<!-- Educations -->
-				<div class="grid_16 formations">
-					<h3>Pendidikan</h3>
-					<ul>
-						<li>
-							<h4>
-								<strong>SEKOLAH DASAR</strong>
-							</h4>
-							<span class="dates">1998 - 2014</span>
-							<p>SDN 5 GARDUJAYA</p>
-						</li>
-						<li>
-							<h4>
-								<strong>SEKOLAH MENENGAH PERTAMA </strong>
-							</h4>
-							<span class="dates">2014 - 2007</span>
-							<p>SMPN 3 PANAWANGAN</p>
-						</li>
-						<li>
-							<h4>
-								<strong>SEKOLAH MENENGAH ATAS </strong>
-							</h4>
-							<span class="dates">2007 - 2010</span>
-							<p>SMAN 1 PANAWANGAN</p>
-						</li>
-						<li>
-							<h4>
-								<strong>SEKOLAH TINGGI</strong>
-							</h4>
-							<br>
-							<span class="dates">2013 - 2016</span>
-							<p>STT TELEMATIKA CAKRAWALA</p>
-							<p>D3 - Teknik Komputer</p>
-							<br>
-							<span class="dates">2019 - Sekarang</span>
-							<p>SEKOLAH TINGGI TEKNOLOGI BANDUNG</p>
-							<p>S1 - Teknik Informatika (Program Ekstensi)</p>
-						</li>
-						
-																							
-					</ul>
-				</div>
-																					
-				<!-- Hobby -->
-				<div class="grid_8 loisirs">
-					<h3>Hobby/ Bahasa</h3>
-					<p>
-						<strong>
-							Hobby :
-						</strong>
-						- MEMBACA BUKU/ARTIKEL TEKNOLOGI - HAND MADE - DESAIN LOGO - MENONTON - PERCOBAAN/RISET
-					</p>
-					<p>
-						<strong>
-							Bahasa :
-						</strong> 
-						- INDONESIA - INGGRIS
-					</p>
-				</div>
-																					
-				<!-- Contact -->
-				<div class="grid_8 contact">
-					<h3>Kontak</h3>
-					<p>
-						Jika Anda tertarik dengan profil saya, jangan ragu untuk menghubungi saya
-					</p>
-					<ul>
-						<li class="lieu">Dusun Citundun Desa Gardujaya Kecamatan Panawangan Kabupaten Ciamis, 46255</li>
-						<li class="phone">SMS/ WA : <a href="https://api.whatsapp.com/send?phone=62895330802566&text=Hallo%20Mr.%20Doni%20Nurramdan">0895330802566</a></li>
-						<li class="phone">Facebook: <a href="https://www.facebook.com/doni.nurramdan/">www.facebook.com/doni.nurramdan</a></li>
-						<li class="phone">Instagram: <a href="https://instagram.com/doninurramdan/">@doninurramdan</a></li>
-						<li class="mail">Email    :<a href="https://nurramdandoni@gmail.com/">nurramdandoni@gmail.com</a></li>
-						<li class="site">Website Github :<a href="http://nurramdandoni.github.io/">http://nurramdandoni.github.io</a></li>
-						<li class="site">Website StartUp :<a href="https://paylite.co.id">https://paylite.co.id</a></li>
-						<li class="site" onclick="callFlutterGetManufacture()">PortFolio Proyek :<a href="http://github.com/nurramdandoni/">http://github.com/nurramdandoni</a></li>
-						<li class="site">Otto Biografi :<a href="Ottobiografi_Doni.pdf">Otto Biografi Doni Nurramdan</a></li>
-					<!-- <li class="form"><a class="toContactform">via le formulaire de contact</a></li>
-						<li class="form"><a class="toContactform">via le formulaire de contact</a></li> -->
-					</ul>
-				</div>
-			</section>
+          <!-- Projects -->
+          <section class="mt-6">
+            <h2 class="text-2xl font-bold border-b pb-2 mb-4">Projects & Portfolio</h2>
+            <ul class="list-disc ml-5 text-sm">
+              <li>Logistics System – DAPENBI &nbsp&nbsp&nbsp&nbsp&nbsp| https://logistik.dapenbi.go.id</li>
+              <li>Preline Attendance – BPJS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://presensi.bpjsketenagakerjaan.go.id</li>
+              <li>E-Selection System – BPJS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://eselection.bpjsketenagakerjaan.go.id</li>
+              <li>SIAKAD – STT Bandung &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://siakad.sttbandung.ac.id</li>
+              <li>E-learning – STT Bandung &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| https://elearning.sttbandung.ac.id
+              </li>
+              <li>OASIS Platform – STT Bandung | https://oasis.sttbandung.ac.id</li>
+            </ul>
+          </section>
 
-		<!-- Scripts JavaScript -->
-		<script src="jquery-1.js"></script>
-		<script src="validate.js"></script>
-		<!--[if lt IE 9]>
-		<script src="scripts/placeholder.js"></script>
-		<![endif]-->
-		<script src="plugins.js"></script>
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Additional Links</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li><a href="https://github.com/nurramdandoni/Ottobiografi_Doni.pdf" class="text-blue-600">Download
+                Technical Autobiography (PDF)</a></li>
+          </ul>
+        </section>
 
-<!-- 		<button onclick="callFlutterGetManufacture()">C</button> -->
-	</body>
-  
+        <!-- Indonesian Section -->
+        <section id="id-section" class="hidden">
+          <h2 class="text-2xl font-bold border-b pb-2">Profil</h2>
+          <p class="text-sm mt-2">Developer Fullstack berpengalaman lebih dari 8 tahun dalam mengembangkan dan
+            memelihara aplikasi skala besar untuk sektor pemerintahan, fintech, dan pendidikan. Mahir dalam PHP,
+            Node.js, Java (Spring Boot), Python (Flask, Django), serta framework frontend modern seperti VueJS dan
+            React. Memiliki latar belakang DevOps yang kuat dengan Docker dan Openshift. Terbukti mampu menghadirkan
+            solusi yang andal di bawah tenggat waktu yang ketat. Antusias terhadap penulisan kode yang bersih, mudah
+            dirawat, dan arsitektur perangkat lunak yang pragmatis.</p>
+
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Pendidikan</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li>SDN 5 Gardujaya (1998 - 2004)</li>
+            <li>SMPN 3 Panawangan (2004 - 2007)</li>
+            <li>SMAN 1 Panawangan (2007 - 2010)</li>
+            <li>D3 Teknik Komputer, STT Telematika Cakrawala (2013 - 2016)</li>
+            <li>S1 Teknik Informatika, STT Bandung (2019 – sekarang)</li>
+            <li>S1 Ilmu Komputer, Universitas Terbuka (2024 – sekarang)</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Pengalaman Kerja</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li> 
+              <strong>Fullstack Engineer</strong> — PT Kita Indonesia Plus (We+), Jakarta Pusat (Mei 2025 - Agustus
+              2025) 
+              <br>• Mengembangkan Dashboard Kesehatan, Aset, CMS, dan API Produk menggunakan Django dan React
+            </li>
+            <li> 
+              <strong>Fullstack Engineer</strong> — Dana Pensiun Bank Indonesia (Oktober 2024 - April 2025) 
+              <br>• Mengembangkan sistem logistik menggunakan PHP, Node.js, dan Spring Boot 
+              <br>• Integrasi dengan printer
+              termal, SSO, dan cronjob rebalance </li>
+            <li> 
+              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (November 2022 - November 2024) 
+              <br>• Sistem presensi Android/iOS (menggunakan Cordova, NodeJS, VueJS) 
+              <br>• Notifikasi SSE, deteksi GPS palsu, dan SSL
+            </li>
+            <li> 
+              <strong>Fullstack Developer</strong> — Futuready (Mei 2022 - November 2022) 
+              <br>• API menggunakan Spring Boot dan integrasi dengan VueJS 
+              <br>• CI/CD menggunakan Docker 
+            </li>
+            <li> 
+              <strong>PHP Developer</strong> — Indocyber Global Teknologi (Mei 2022 - April 2025) 
+              <br>• Mengembangkan sistem berbasis PHP 
+            </li>
+            <li> <strong>Fullstack Developer</strong> — STT Bandung (Mei 2018 - April 2022) 
+              <br>• Membangun sistem SIAKAD, Elearning, dan OASIS 
+              <br>• Integrasi dengan Jitsi, SSE, dan MQTT 
+            </li>
+            <li>
+              <strong>Programmer Back End</strong> – PT Gravitasi Teknologi Indonesia (2019–2020)
+              <br>• Integrasi API pelacakan pesawat FlightAware  
+              <br>• Pemeliharaan API produk
+            </li>
+            <li>
+              <strong>Pejabat Sementara (Pjs.) Kepala PPSI</strong> – STT Bandung (Mei 2020 – Maret 2021)
+              <br>• Mengelola perencanaan proyek dan timeline  
+              <br>• Menyusun dan menyampaikan laporan kepada manajemen
+            </li>
+            <li>
+              <strong>Guru RPL</strong> – SMK Taruna Bhakti Kadugede (2012–2018)
+              <br>• Membuat Kurikulum Pembelajaran Semester (Pomes) dan Tahunan (Prota)
+              <br>• Membuat Dokumen Pengajaran Tatap Muka
+              <br>• Melakukan Evaluasi Hasil Pembelajaran
+              <br>• Memberikan Hasil Pembelajaran
+            </li>
+            <li>
+              <strong>Sales</strong> – PT Amerta Indah Otsuka (2016–2017)
+              <br>• Sales Distribusi Produk Pocari Sweat, Soyjoy dan Ion Essence 
+              <br>• Promosi Produk
+              <br>• Pengenalan Produk
+              <br>• Laporan Penjualan
+            </li>
+          </ul>
+
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Freelance & Proyek</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li>Aplikasi Tabel Periodik Kimia SMA/SMK</li>
+            <li>Mini Market Toko Cicih</li>
+            <li>Sistem Rekam Medis Klinik dr. Yossi Garniwa</li>
+            <li>Aplikasi CAT Ujian SMK Taruna Bhakti v1–v3</li>
+            <li>Sistem e‑Surat Desa Gardujaya</li>
+            <li>Desain Logo CV. Karya Insani & Produk Basreng</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Sertifikasi</h2>
+          <p class="text-sm mt-2"><strong>Certified Internet of Things Associate</strong> – Multimatics (Mar 2021)</p>
+
+          <!-- Projects -->
+          <section class="mt-6">
+            <h2 class="text-2xl font-bold border-b pb-2 mb-4">Projects & Portfolio</h2>
+            <ul class="list-disc ml-5 text-sm">
+              <li>Logistics System – DAPENBI &nbsp&nbsp&nbsp&nbsp&nbsp| https://logistik.dapenbi.go.id</li>
+              <li>Preline Attendance – BPJS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://presensi.bpjsketenagakerjaan.go.id</li>
+              <li>E-Selection System – BPJS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://eselection.bpjsketenagakerjaan.go.id</li>
+              <li>SIAKAD – STT Bandung &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|
+                https://siakad.sttbandung.ac.id</li>
+              <li>E-learning – STT Bandung &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| https://elearning.sttbandung.ac.id
+              </li>
+              <li>OASIS Platform – STT Bandung | https://oasis.sttbandung.ac.id</li>
+            </ul>
+          </section>
+
+          <h2 class="text-2xl font-bold border-b pb-2 mt-6">Link Tambahan</h2>
+          <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
+            <li><a href="Ottobiografi_Doni.pdf" class="text-blue-600">Unduh Otobiografi
+                Teknis (PDF)</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const enBtn = document.getElementById('lang-en-btn');
+    const idBtn = document.getElementById('lang-id-btn');
+    const enSec = document.getElementById('en-section');
+    const idSec = document.getElementById('id-section');
+
+    enBtn.onclick = () => {
+      enSec.classList.remove('hidden');
+      idSec.classList.add('hidden');
+      enBtn.classList.add('font-bold');
+      idBtn.classList.remove('font-bold');
+    };
+    idBtn.onclick = () => {
+      idSec.classList.remove('hidden');
+      enSec.classList.add('hidden');
+      idBtn.classList.add('font-bold');
+      enBtn.classList.remove('font-bold');
+    };
+    // set default English on load
+    enBtn.click();
+  </script>
+</body>
+
 </html>
