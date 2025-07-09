@@ -17,6 +17,16 @@
     .lang-toggle {
       cursor: pointer;
     }
+    .badge {
+      display: inline-block;
+      padding: 1px 8px;
+      margin-top: 5px;
+      font-size: 12px;
+      color: white;
+      background-color: #007bff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -107,9 +117,10 @@
               <br>• Integrated thermal printer, SSO, rebalance cronjob
             </li>
             <li>
-              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (Nov 2022 - Nov 2024)
+              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (Nov 2022 - Nov 2024) <button class="rounded-md bg-gray-950/5 px-2.5 py-.5 text-sm text-gray-900 hover:bg-gray-950/10" onclick="openModal('bpjs_en')">👁️ Detail</button>
               <br>• Android/iOS attendance system (Cordova, NodeJS, VueJS)
               <br>• SSE notifications, GPS spoof detection, SSL
+              <br>• Spring Boot APIs
             </li>
             <li>
               <strong>Fullstack Developer</strong> — Futuready (May 2022 - Nov 2022)
@@ -183,8 +194,8 @@
 
           <h2 class="text-2xl font-bold border-b pb-2 mt-6">Additional Links</h2>
           <ul class="list-disc ml-5 text-sm space-y-1 mt-2">
-            <li><a href="https://github.com/nurramdandoni/Ottobiografi_Doni.pdf" class="text-blue-600">Download
-                Technical Autobiography (PDF)</a></li>
+            <li><a href="https://drive.google.com/file/d/1RPPIiWgvbK89HKkeYqbMxrc0PIX5Hfhb/view?usp=sharing" class="text-blue-600">Download
+                Technical Autobiography (PDF) By ChatGPT-4</a></li>
           </ul>
         </section>
 
@@ -216,14 +227,15 @@
               <br>• Mengembangkan Dashboard Kesehatan, Aset, CMS, dan API Produk menggunakan Django dan React
             </li>
             <li> 
-              <strong>Fullstack Engineer</strong> — Dana Pensiun Bank Indonesia (Oktober 2024 - April 2025) 
+              <strong>Fullstack Engineer</strong> — Dana Pensiun Bank Indonesia (Oktober 2024 - April 2025)
               <br>• Mengembangkan sistem logistik menggunakan PHP, Node.js, dan Spring Boot 
               <br>• Integrasi dengan printer
               termal, SSO, dan cronjob rebalance </li>
             <li> 
-              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (November 2022 - November 2024) 
+              <strong>Fullstack Engineer</strong> — BPJS Ketenagakerjaan (November 2022 - November 2024) <button class="rounded-md bg-gray-950/5 px-2.5 py-.5 text-sm text-gray-900 hover:bg-gray-950/10" onclick="openModal('bpjs_id')">👁️ Detail</button>
               <br>• Sistem presensi Android/iOS (menggunakan Cordova, NodeJS, VueJS) 
               <br>• Notifikasi SSE, deteksi GPS palsu, dan SSL
+              <br>• API menggunakan Spring Boot
             </li>
             <li> 
               <strong>Fullstack Developer</strong> — Futuready (Mei 2022 - November 2022) 
@@ -304,6 +316,114 @@
     </div>
   </div>
 
+<!-- english -->
+ <div id="modal-bpjs_en" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+  <div class="flex min-h-screen items-center justify-center p-4">
+
+    <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6 relative">
+      <button onclick="closeModal('bpjs_en')" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">
+        &times;
+      </button>
+
+      <!-- Modal Content -->
+      <h2 class="text-lg font-bold mb-2">PT. BPJS Ketenagakerjaan</h2>
+      
+      <ul class="list-disc ml-5 text-sm text-gray-700 space-y-2">
+        <hr>
+        ✅ Key Responsibilities:
+        <ul class="ml-3 list-disc">
+          <li>Designed and developed RESTful APIs using Spring Boot and Java 21.</li>
+          <li>Refactored and optimized existing APIs to improve efficiency and scalability.</li>
+          <li>Built modular architecture consisting of:
+            <ul class="ml-3 list-disc">
+              <li>Model (Entity + DTO)</li>
+              <li>Repository (JPA/Hibernate)</li>
+              <li>Service (Business Logic)</li>
+              <li>Controller (REST Endpoint)</li>
+            </ul>
+          </li>
+          <li>Implemented and enhanced JWT-based Authentication.</li>
+          <li>Integrated Kafka for broadcasting application events across microservices.</li>
+          <li>Configured API security by explicitly whitelisting allowed endpoints using Spring Security.</li>
+          <li>Designed and developed Frontend/Mobile apps based on business unit requirements using Figma designs.</li>
+          <li>Prepared deployment/UAT lists and assisted the operational team during the release process.</li>
+          <li>Supported the DevOps/Operational team during deployment.</li>
+        </ul>
+        <hr>
+        ⚙️ Technology Stack:
+        <ul class="ml-3 list-disc">
+          <li>Backend: Spring Boot, Java 21, JPA, Hibernate, NodeJS</li>
+          <li>Middleware: NodeJS, Nginx</li>
+          <li>Frontend: VueJS, React JS, PHP</li>
+          <li>Mobile: Cordova, Maven, Angular, Low-code (Wavemaker)</li>
+          <li>Auth & Security: JWT, Spring Security</li>
+          <li>Messaging: Apache Kafka</li>
+          <li>Database: MariaDB, OracleDB</li>
+          <li>CI/CD: Jenkins, Docker, Portainer, OpenShift</li>
+          <li>Other: Lombok, ModelMapper, Redis, SSE</li>
+        </ul>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- indo -->
+<div id="modal-bpjs_id" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+  <div class="flex min-h-screen items-center justify-center p-4">
+
+    <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto p-6 relative">
+      <button onclick="closeModal('bpjs_id')" class="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">
+        &times;
+      </button>
+
+      <!-- Isi Modal -->
+      <h2 class="text-lg font-bold mb-2">PT. BPJS Ketenagakerjaan</h2>
+
+      <ul class="list-disc ml-5 text-sm text-gray-700 space-y-2">
+        <hr>
+        ✅ Tanggung Jawab Utama:
+        <ul class="ml-3 list-disc">
+          <li>Merancang dan mengembangkan RESTful API menggunakan Spring Boot dan Java 21.</li>
+          <li>Melakukan refactor dan perbaikan terhadap API yang sudah ada agar lebih efisien dan scalable.</li>
+          <li>Membangun arsitektur modular:
+            <ul class="ml-3 list-disc">
+              <li>Model (Entity + DTO)</li>
+              <li>Repository (JPA/Hibernate)</li>
+              <li>Service (Business Logic)</li>
+              <li>Controller (REST Endpoint)</li>
+            </ul>
+          </li>
+          <li>Mengimplementasikan dan memperbaiki JWT Authentication</li>
+          <li>Integrasi dengan Kafka untuk broadcasting event antar microservice.</li>
+          <li>Mengatur endpoint API secara eksplisit menggunakan konfigurasi Spring Security, hanya request yang di-*whitelist* yang dapat diakses.</li>
+          <li>Merancang dan mengembangkan Frontend/ Mobile sesuai dengan Requirement Unit Bisnis via Design Figma</li>
+          <li>Melakukan persiapan list dalam proses UAT dan Deployment ke Tim Operasional</li>
+          <li>Membantu proses Deployment tim Operasional</li>
+        </ul>
+        <hr>
+        ⚙️ Stack Teknologi:
+        <ul class="ml-3 list-disc">
+          <li>Backend: Spring Boot, Java 21, JPA, Hibernate, NodeJS</li>
+          <li>Middleware : Nodejs, Nginx</li>
+          <li>Frontend: VueJS, React Js, PHP</li>
+          <li>Mobile: Cordova, Maven, Angular, Lowcode(Wavemaker)</li>
+          <li>Auth & Security: JWT, Spring Security</li>
+          <li>Messaging: Apache Kafka</li>
+          <li>Database: MariaDB, OracleDB</li>
+          <li>CI/CD: Jenkins, Docker, Portainer, OpenShift</li>
+          <li>Other: Lombok, ModelMapper, Redis, SSE</li>
+        </ul>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+  
   <script>
     const enBtn = document.getElementById('lang-en-btn');
     const idBtn = document.getElementById('lang-id-btn');
@@ -324,6 +444,26 @@
     };
     // set default English on load
     enBtn.click();
+
+
+    function openModal(id) {
+      document.getElementById(`modal-${id}`).classList.remove("hidden");
+      document.getElementById(`modal-${id}`).classList.add("flex");
+    }
+    function closeModal(id) {
+      document.getElementById(`modal-${id}`).classList.remove("flex");
+      document.getElementById(`modal-${id}`).classList.add("hidden");
+    }
+
+    // Optional: tutup modal kalau klik di luar kotak
+    window.addEventListener('click', function(e) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (e.target === modal) {
+          modal.classList.remove("flex");
+          modal.classList.add("hidden");
+        }
+      });
+    });
   </script>
 </body>
 
